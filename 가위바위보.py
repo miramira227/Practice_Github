@@ -2,19 +2,19 @@ import random
 
 while True:
 
+    computer = random.randint(1,3)
+    if (computer == 1):
+        computer = "가위"
+    elif (computer == 2):
+        computer = "바위"
+    elif (computer == 3):
+        computer = "보"
+
     player = input("가위, 바위, 보 중에 하나 입력하세요! : ")
     while (player != "가위" and player != "바위" and player != "보"):
         player = input("가위, 바위, 보 중에만 하나를 입력하세요! : ")
-
-    computer = random.randint(1,3)
-    if (computer == 1):
-        computer == "가위"
-    elif (computer == 2):
-        computer == "바위"
-    elif (computer == 3):
-        computer == "보"
-    else:
-        print("다시~")
+    print("당신의 선택은 : "+player)
+    print("컴퓨터의 선택은 : "+computer)
 
     if (player == computer):
         print("비겼어요~")
