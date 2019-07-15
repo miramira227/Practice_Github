@@ -1,2 +1,3 @@
+import random
 while True:
-    print("가위바위보 중 하나를 선택하세요")
+    user=input("가위바위보를 하세요:")
